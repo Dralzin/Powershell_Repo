@@ -9,4 +9,4 @@ Function InstallChk {
      Write-Host "Installed"
     }
 }
-InstallChk -AppVersion '122.0.6261.94'
+InstallChk -AppVersion 'XXX.X.XXXX.XX'

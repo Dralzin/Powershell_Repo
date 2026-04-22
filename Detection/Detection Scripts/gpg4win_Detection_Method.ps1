@@ -1,1 +1,0 @@
-if(([version](Get-ItemPropertyValue -path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\GPG4Win' -Name DisplayVersion -ea SilentlyContinue)) -ge '4.3.1') { $true } else { $false }
