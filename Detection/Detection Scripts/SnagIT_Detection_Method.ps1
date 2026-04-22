@@ -1,0 +1,1 @@
+if((get-item "$($env:ProgramFiles)\TechSmith\Snagit 2024\SnagitCapture.exe" -ea SilentlyContinue).VersionInfo.FileVersion -ge '24.2.4.3892') { $true }

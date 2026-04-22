@@ -1,0 +1,1 @@
+$bRes = if(([version](Get-ItemPropertyValue -path 'HKCU:\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\UNINSTALL\POSTMAN' -Name DisplayVersion -ea SilentlyContinue)) -ge '11.1.14') { $true } else { $false }; if($bRes) { $true } else { $null }; exit(0);
