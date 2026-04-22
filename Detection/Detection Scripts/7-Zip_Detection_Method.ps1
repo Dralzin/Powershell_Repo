@@ -1,9 +1,10 @@
 Function InstallChk {
 
     param (
-        [Parameter(Mandatory)]$AppVersion
+        [Parameter(Mandatory)]$AppVersion #Parameter for storing App Version
     )
 
+    #
     $32BitPath = "$Env:ProgramFiles\7-Zip\7zFM.exe"
     $64BitPath = "${Env:ProgramFiles(x86)}\7-Zip\7zFM.exe"
 
