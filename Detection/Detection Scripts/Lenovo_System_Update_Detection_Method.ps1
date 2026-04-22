@@ -1,8 +1,12 @@
-﻿$AppPath = "${Env:ProgramFiles(x86)}\Lenovo\System Update\tvsu.exe"
+﻿Function InstallChk {
 
-# The following code checks to make sure the application is installed
-# at the assigned version.
-If([String](Get-Item -Path $AppPath -ErrorAction SilentlyContinue).VersionInfo.FileVersion){
+    # Define the path to check for the Lenovo System Update executable
+    $AppPath = "${Env:ProgramFiles(x86)}\Lenovo\System Update\tvsu.exe"
 
- Write-Host "Installed"
+    #
+    If([String](Get-Item -Path $AppPath -ErrorAction SilentlyContinue).VersionInfo.FileVersion){
+        Write-Host "Installed"
+    }
 }
+
+InstallChk

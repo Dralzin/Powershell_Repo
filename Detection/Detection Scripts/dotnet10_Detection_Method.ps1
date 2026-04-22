@@ -31,9 +31,11 @@ function Test-DotNet10Installed {
     return $false
 }
 
-if (Test-DotNet10Installed) {
-    Write-Host 'Installed'
-    exit 0
+Function InstallChk {
+    if (Test-DotNet10Installed) {
+        Write-Host 'Installed'
+        exit 0
+    }
 }
 
-exit 1
+InstallChk
