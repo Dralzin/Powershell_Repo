@@ -10,4 +10,4 @@
         Write-Host "Installed"
     }
 }
-InstallDetect '7.32.20403' 
+InstallDetect -AppVersion '7.32.20403' 

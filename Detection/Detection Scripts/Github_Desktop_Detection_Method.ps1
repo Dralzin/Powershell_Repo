@@ -1,7 +1,6 @@
-﻿function InstallDetect {
+﻿function InstallChk {
     param (
-        [Parameter(Mandatory)]$AppVersion,
-        [Parameter(Mandatory)]$AppName
+        [Parameter(Mandatory)]$AppVersion
     )
 
     $64BitPath = 'C:\Program Files (x86)\GitHubDesktop\GitHubDesktop.exe'
@@ -11,4 +10,4 @@
         Write-Host "Installed"
     }
 }
-InstallDetect '2.8.1' 'GitHubDesktop'
+ InstallChk -AppVersion '2.8.1' 
